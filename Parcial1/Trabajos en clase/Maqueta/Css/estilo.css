@@ -1,0 +1,36 @@
+body{
+    width: 1336px;
+    height: 800px;
+    background-color: rgb(148, 230, 230);
+    padding: 20px;
+}
+header{
+    width: 800px;
+    height: 150px;
+    background-color: rgb(172, 155, 130);
+    margin: 15px;
+    
+}
+#barra1{
+    width: 800px;
+    height: 50px;
+    background-color: rgb(182, 129, 51);
+    margin-left: 850px;
+    display: flex;
+}
+
+#barra2{
+    width: 800px;
+    height: 50px;
+    background-color: rgb(182, 129, 51);
+    margin-top: 30px;
+    margin-left: 850px;
+    display: flex;
+}
+nav{
+    width: 1645px;
+    height: 50px;
+    background-color: rgb(182, 129, 51);
+    margin: 15px;
+    margin-top: 50px;
+}

@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#contenedor{
+    width: 100vw; 
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "evento1 evento2 evento5"
+    "evento3 evento4 evento5";
+}
+
+.evento1{
+    grid-area: evento1;
+    background-color: rgb(112, 90, 175);
+}
+.evento2{
+    grid-area: evento2;
+    background-color: rgb(195, 123, 236);
+}
+.evento3{
+    grid-area: evento3;
+    background-color: rgb(231, 231, 125);
+}
+.evento4{
+    grid-area: evento4;
+    background-color: rgb(241, 182, 227);
+}
+.evento5{
+    grid-area: evento5;
+    background-color: rgb(142, 233, 139);
+}
