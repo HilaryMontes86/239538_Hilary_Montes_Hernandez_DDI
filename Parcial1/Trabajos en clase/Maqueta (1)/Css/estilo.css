@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw; 
+    min-height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "contenido contenido contenido contenido"
+    "footer footer footer footer";
+}
+header{
+    display: grid;
+    grid-template-areas: 
+    "logo barra1"
+    "logo barra2";
+    grid-area: header;
+    gap: 10px;
+    min-height: 50px;
+}
+#logo{
+    background-color: rgb(35, 35, 78);
+    grid-area: logo;
+}
+#barra1{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    " uno uno dos tres cuatro";
+    gap: 10px;
+    grid-area: barra1;
+}
+#cuadro1{
+    background-color: rgb(35, 35, 78);
+    grid-area: uno;
+}
+#cuadro2{
+    background-color: rgb(35, 35, 78);
+    grid-area: dos;
+}
+#cuadro3{
+    background-color: rgb(35, 35, 78);
+    grid-area: tres;
+}
+#cuadro4{
+    background-color: rgb(35, 35, 78);
+    grid-area: cuatro;
+}
+#barra2{
+    background-color: rgb(34, 34, 148);
+    grid-area: barra2;
+}
+nav{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-areas: 
+    " nav1 nav2";
+    gap: 10px;
+    grid-area: nav;
+    min-height: 30px;
+}
+#nav1{
+    background-color: rgb(143, 143, 231);
+    grid-area: nav1;
+}
+#nav2{
+    background-color: rgb(143, 143, 231);
+    grid-area: nav2;
+}
+#contenido{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "cont1 cont2 cont3";
+    gap: 10px;
+    grid-area: contenido;
+    min-height: 60vh;
+}
+.cont1{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 10px;
+    grid-area: cont1;
+}
+.mitad1{
+    background-color: rgb(118, 118, 196);
+    display: grid;
+    place-items: center;
+}
+.mitad2{
+    background-color: rgb(118, 118, 196);
+    display: grid;
+    place-items: center;
+}
+.cont2{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 10px;
+    grid-area: cont2;
+}
+.parte1{
+    background-color: rgb(118, 118, 196);
+    display: grid;
+    place-items: center;
+}
+.parte2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.parte2-1{
+    background-color: rgb(118, 118, 196);
+    display: grid;
+    place-items: center;
+}
+.cont3{
+    background-color: rgb(118, 118, 196);
+    grid-area: cont3;
+    display: grid;
+    place-items: center;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "elem1 elem2 elem3 elem4 elem5";
+    grid-area: footer;
+    gap: 10px;
+}
+.elem1{
+    grid-area: elem1;
+    background-color: rgb(55, 55, 97);
+}
+.elem2{
+    grid-area: elem2;
+    background-color: rgb(55, 55, 97);
+}
+.elem3{
+    grid-area: elem3;
+    background-color: rgb(55, 55, 97);
+}
+.elem4{
+    grid-area: elem4;
+    background-color: rgb(55, 55, 97);
+}
+.elem5{
+    grid-area: elem5;
+    background-color: rgb(55, 55, 97);
+}
