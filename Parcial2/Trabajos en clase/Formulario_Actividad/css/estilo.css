@@ -3,8 +3,6 @@
     margin: 0;
 }
 
-
-
 body {
     margin: 0;
     min-height: 100vh; /* en vez de height */
@@ -71,7 +69,6 @@ body {
     transform: scale(1.07);
 }
 
-
 #contenedor {
     display: flex;
     flex-wrap: wrap;
@@ -79,6 +76,10 @@ body {
     gap: 20px;
     padding: 40px;
 }
+#contenedor :hover{
+    transform: scale(1.07);
+}
+
 .card {
     background: #a4cef3;
     width: 250px;
@@ -89,25 +90,36 @@ body {
     transition: 0.3s ease;
 }
 
-
-
-/* Imagen */
 .card img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-/* Título */
 .card h3 {
     margin: 10px 0;
     font-size: 18px;
     color: #273b5f;
 }
 
-/* Texto */
 .card p {
     font-size: 14px;
     color: #141d30;
     text-align: justify;
+}
+
+#contenedor button{
+    background: #a4cef3;
+    color: #141d30;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contenedor button:hover{
+    transform: scale(1.07);
 }
