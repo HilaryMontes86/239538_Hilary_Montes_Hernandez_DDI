@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <!-- CANVAS -->
+        <canvas id="lienzo" class="lienzo" width="1000" height="800"></canvas>
+
+        <!-- PANEL -->
+        <div class="panel">
+
+            <!-- Herramientas -->
+            <div class="grupo">
+                <h3>Herramientas</h3>
+                <button id="linea">Linea</button>
+                <button id="pincel">Pincel</button>
+                <button id="cuadro">Cuadro</button>
+                <button id="circulo">Circulo</button>
+                <button id="estrella">Estrella</button>
+                <button id="sticker">Sticker</button>
+                <button id="borrador">Borrador</button>
+            </div>
+
+            <!-- Archivo subido -->
+            <div class="grupo">
+                <h3>Sticker</h3>
+                <input type="file" id="inputImagen">
+            </div>
+
+            <!-- Colores -->
+            <div class="grupo">
+                <h3>Colores</h3>
+                <label>Relleno</label>
+                <input type="color" id="colorRelleno">
+
+                <label>Linea</label>
+                <input type="color" id="colorLinea">
+
+                <label>Grosor</label>
+                <input type="range" id="grosor" min="1" max="20">
+            </div>
+
+            <!-- Opciones de modo-->
+            <div class="grupo">
+                <h3>Modo</h3>
+                <label><input type="radio" name="modo" id="relleno" checked> Relleno</label>
+                <label><input type="radio" name="modo" id="contorno"> Contorno</label>
+            </div>
+
+            <!-- Filtros -->
+            <div class="grupo">
+                <h3>Filtros</h3>
+                <button id="bn">Blanco y negro</button>
+                <button id="rojo">Escala roja</button>
+                <button id="verde">Escala verde</button>
+                <button id="azul">Escala azul</button>
+                <button id="sepia">Sepia</button>
+                <button id="negativo">Negativo</button>
+            </div>
+
+            <!-- Acciones -->
+            <div class="grupo">
+                <h3>Acciones</h3>
+                <button id="limpiar">Limpiar</button>
+                <button id="guardar">Guardar</button>
+                <button id="deshacer">Deshacer</button>
+                <button id="rehacer">Rehacer</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="js/script.js"></script>
+</html>
